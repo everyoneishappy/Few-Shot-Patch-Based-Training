@@ -1,0 +1,5 @@
+python generate_webcam.py --checkpoint "D:\DEV\Repos\Python\Few-Shot-Patch-Based-Training\_pre-trained-models\Zuzka2\model_00020.pth" --device "cuda:0" --resolution 1280 720 --show_original 1 --resize 256
+python generate_webcam.py --checkpoint "D:\DEV\Repos\Python\Few-Shot-Patch-Based-Training\_pre-trained-models\Maruska640\model_00020.pth" --device "cuda:0" --resolution 320 240--show_original 1 --resize 256
+
+// was hard to get right torch version to work on RTX3090, used the below in the end:
+pip install torch==1.7.0+cu110 torchvision==0.8.1+cu110 -f https://download.pytorch.org/whl/torch_stable.html
